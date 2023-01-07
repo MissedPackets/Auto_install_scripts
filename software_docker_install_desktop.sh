@@ -4,3 +4,4 @@ f=$(curl https://docs.docker.com/desktop/install/ubuntu/ |grep DEB |head -1| gre
 echo "dl'ing: $f"
 
 wget $f
+sudo apt install ./docker-desktop-*-amd64.deb
