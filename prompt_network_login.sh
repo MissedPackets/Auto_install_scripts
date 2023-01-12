@@ -42,9 +42,11 @@ if [[ $(sudo dhclient -v "$selected_interface" 2>&1 | grep -c "bound") -gt 0 ]];
     if [[ $stop_conn == "Y" || $stop_conn == "y" ]]; then
         # Stop the current connection
         # Stop the current connection
+        sudo ifconfig "$selected_interface" down
+
         sudo dhclient -r "$selected_interface"
         sleep 2
-        exit 1
+        # exit 1
     else
         echo "Exiting script..."
         exit 1
