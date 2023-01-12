@@ -1,5 +1,5 @@
 #!/bin/bash
-
+sudo apt install net-tools
 iwconfig_list=()
 #storing the iwconfig names here
 
