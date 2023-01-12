@@ -46,7 +46,7 @@ if [[ $(sudo dhclient -v "$selected_interface" 2>&1 | grep -c "bound") -gt 0 ]];
 
         sudo dhclient -r "$selected_interface"
         sleep 2
-        exit 1
+        # exit 1
     else
         echo "Exiting script..."
         exit 1
