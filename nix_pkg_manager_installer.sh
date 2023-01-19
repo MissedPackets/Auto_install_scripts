@@ -1,4 +1,5 @@
 #!/usr/bin
+unset NIX_REMOTE
 sudo apt install nix-bin
 a=$(read -p)
 echo "Installing Nix's package manager..."
