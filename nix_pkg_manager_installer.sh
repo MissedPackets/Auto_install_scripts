@@ -3,7 +3,7 @@ unset NIX_REMOTE
 sudo apt install nix-bin
 a=$(read -p)
 echo "Installing Nix's package manager..."
-sh <(curl -L https://nixos.org/nix/install) --no-daemon
+sh <(curl -L "https://releases.nixos.org/nix/nix-2.9.1/install") --no-daemon
 #Incase there is a sqlite error .e.g) SQLite database '/nix/var/nix/db/db.sqlite' is busy...
 sandbox = false > ~/.config/nix/nix.conf
 
