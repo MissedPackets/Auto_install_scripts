@@ -8,3 +8,4 @@ sh <(curl -L "https://releases.nixos.org/nix/nix-2.9.1/install") --no-daemon
 sandbox = false > ~/.config/nix/nix.conf
 
 echo -e "Nix's package manager has finished installing! Try to run this command to test if there are no errors: \n nix-env -i hello"
+unset NIX_REMOTE
